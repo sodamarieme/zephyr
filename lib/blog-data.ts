@@ -1,0 +1,85 @@
+export const blogPosts = [
+  {
+    _id: "1",
+    title: "Pourquoi votre PME a besoin d'un site web en 2025",
+    slug: { current: "pourquoi-votre-pme-a-besoin-dun-site-web" },
+    excerpt: "En Afrique de l'Ouest, la digitalisation n'est plus une option. Découvrez comment un site professionnel transforme votre crédibilité et vos ventes.",
+    category: "Business Digital",
+    readingTime: 6,
+    publishedAt: "2025-04-15T09:00:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+  {
+    _id: "2",
+    title: "Design System : pourquoi c'est la base de tout bon produit",
+    slug: { current: "design-system-base-de-tout-bon-produit" },
+    excerpt: "Un design system bien pensé réduit le temps de développement de 40% et garantit une cohérence visuelle irréprochable sur toutes les surfaces.",
+    category: "Design",
+    readingTime: 8,
+    publishedAt: "2025-03-28T10:00:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+  {
+    _id: "3",
+    title: "React Native vs Flutter : quel choix pour votre app en 2025 ?",
+    slug: { current: "react-native-vs-flutter-2025" },
+    excerpt: "Comparatif complet des deux frameworks les plus populaires pour le développement mobile cross-platform, avec des cas concrets du marché sénégalais.",
+    category: "Mobile",
+    readingTime: 10,
+    publishedAt: "2025-03-10T11:00:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+  {
+    _id: "4",
+    title: "SEO Local au Sénégal : dominez les recherches Google",
+    slug: { current: "seo-local-senegal-dominez-google" },
+    excerpt: "Les stratégies SEO qui fonctionnent vraiment sur le marché sénégalais : mots-clés, Google Business Profile, et optimisation mobile-first.",
+    category: "SEO & Marketing",
+    readingTime: 7,
+    publishedAt: "2025-02-20T08:00:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+  {
+    _id: "5",
+    title: "Next.js 15 : les fonctionnalités qui changent tout",
+    slug: { current: "nextjs-15-fonctionnalites-qui-changent-tout" },
+    excerpt: "Server Components, Turbopack stable, PPR... Next.js 15 redéfinit les standards du développement web moderne. Notre analyse détaillée.",
+    category: "Développement",
+    readingTime: 9,
+    publishedAt: "2025-02-05T09:30:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+  {
+    _id: "6",
+    title: "Animations Framer Motion : créer des interfaces qui captivent",
+    slug: { current: "animations-framer-motion-interfaces-captivantes" },
+    excerpt: "Guide pratique pour créer des animations fluides et performantes avec Framer Motion, avec des exemples concrets et des techniques avancées.",
+    category: "Design",
+    readingTime: 11,
+    publishedAt: "2025-01-18T10:00:00Z",
+    coverImage: null,
+    author: { name: "Massourang Sourang", avatar: null },
+  },
+];
+
+export const categoryColors: Record<string, string> = {
+  "Business Digital": "from-blue-500 to-cyan-500",
+  "Design": "from-purple-500 to-pink-500",
+  "Mobile": "from-indigo-500 to-violet-500",
+  "SEO & Marketing": "from-orange-500 to-yellow-500",
+  "Développement": "from-emerald-500 to-teal-500",
+  "Actualités": "from-rose-500 to-red-500",
+};
+
+export function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
