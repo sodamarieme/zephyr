@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: zephyr
+    env: node
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    disk: 1024
+    envVars:
+      - key: NODE_ENV
+        value: production
