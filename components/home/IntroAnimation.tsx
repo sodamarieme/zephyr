@@ -121,7 +121,6 @@ export function IntroAnimation() {
                         alt="Zephyr"
                         fill
                         className="object-contain"
-                        style={{ mixBlendMode: "screen" }}
                         priority
                       />
                     </div>
